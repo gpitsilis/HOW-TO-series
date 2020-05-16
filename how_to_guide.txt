@@ -8,7 +8,7 @@ Pyhton is the standard language to use for coding in google colab, which can be 
 The code runs in OS virtualization environments known as: containers. They become very popular as they provide isolation, 
 and security in code execution..... not trusted code.
 Working within containers, in comparison to using real computers, has though the major drawback of not preserving the state
-of the environment (e.g. processes, disk contents) after the container has been terminated.
+of the environment (e.g. processes, disk contents) after the termination of the container.
 
 
 
