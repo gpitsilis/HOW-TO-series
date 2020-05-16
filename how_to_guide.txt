@@ -1,14 +1,16 @@
 
-Co-lab [1] is a new service by Goolle which provides access to GPU computing power to anyone who has a google user account.
-Such service is quite useful for tasks like Neural Network training, where nvidia GPUs has become the industry standard.
+Co-lab [1] is a new service by Google which provides access to Google's GPU computing power to anyone who has a google 
+user account. Such service is quite useful for tasks like Neural Network training, where nvidia GPUs has become the 
+industry standard.
 
-The traditional way (or the one suggested by google) to access these resources is via the use of python notebook interfaces [2]. Notebook contents can have the form of: text, code, output, or comments.
+The traditional way (or the one suggested by google) to access these resources is via the use of python notebook 
+interfaces [2]. Notebook contents can have the form of: text, code, output, or comments.
 
-Pyhton is the standard language to use for coding in google colab, which can be mixed with unix shell commands.
-The code runs in OS virtualization environments known as: containers. They become very popular as they provide isolation, 
-and security in code execution..... not trusted code.
-Working within containers, in comparison to using real computers, has though the major drawback of not preserving the state
-of the environment (e.g. processes, disk contents) after the termination of the container.
+Pyhton is the standard suppored language for coding within Google colab, which can also be mixed with unix shell commands.
+The code runs in OS virtualization environments known as: containers. They become very popular as they provide the isolation, 
+and the security of a sandbox environemnt which makes it suitable for executing not-trusted code in compouting environments.
+Working within containers though, in comparison to using real computers, has the major drawback of the state
+of the environment not been preserved (e.g. processes, disk contents) after the container has been terminated.
 
 To run this tutorial you need to have the following:
 1. A Google Colab account
