@@ -1,8 +1,18 @@
 
 Co-lab [1] is a new service by Goolle which provides access to GPU computing power to anyone who has a google user account.
-Such service is quite useful for tasks like Neural Network training, where nvidia GPUs is the industry standard.
+Such service is quite useful for tasks like Neural Network training, where nvidia GPUs has become the industry standard.
+
+The traditional way (or the one suggested by google) to access these resources is via the use of python notebook interfaces [2]. Notebook contents can have the form of: text, code, output, or comments.
+
+Pyhton is the standard language to use for coding in google colab, which can be mixed with unix shell commands.
+The code runs in OS virtualization environments known as: containers. They become very popular as they provide isolation, 
+and security in code execution..... not trusted code.
+Working within containers, in comparison to using real computers, has though the major drawback of not preserving the state
+of the environment (e.g. processes, disk contents) after the container has been terminated.
 
 
 
 References:
 [1] Colab service, https://research.google.com/colaboratory/faq.html
+[2] Notebooks, https://en.wikipedia.org/wiki/Notebook_int
+[3] Containers and virtualization: https://en.wikipedia.org/wiki/OS-level_virtualization
