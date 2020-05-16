@@ -12,10 +12,10 @@ and the security of a sandbox environemnt which makes it suitable for executing 
 Working within containers though, in comparison to using real computers, has the major drawback of the state
 of the environment not been preserved (e.g. processes, disk contents) after the container has been terminated.
 
-To run this tutorial you need to have the following:
-1. A Google Colab account
-2. An account to ngrok service.
-3. Access to unix shell in your local machine.
+To run this tutorial you need to have access to the following:
+1. Google Colab account
+2. Account on ngrok service.
+3. Unix shell in your local machine.
 
 References:
 [1] Colab service, https://research.google.com/colaboratory/faq.html
