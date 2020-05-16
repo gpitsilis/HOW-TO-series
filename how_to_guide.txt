@@ -1,0 +1,8 @@
+
+Co-lab [1] is a new service by Goolle which provides access to GPU computing power to anyone who has a google user account.
+Such service is quite useful for tasks like Neural Network training, where nvidia GPUs is the industry standard.
+
+
+
+References:
+[1] Colab service, https://research.google.com/colaboratory/faq.html
