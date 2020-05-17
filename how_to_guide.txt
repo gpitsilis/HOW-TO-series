@@ -66,7 +66,7 @@ Step 4. Install ngrok and start-up the service.
 > !pwd
 > !./ngrok tcp 22
 
-Step 5. 
+Step 5. Testing.
 
 Once the ngrok service is up and running, check your status page at ngrok at: https://dashboard.ngrok.com/status/tunnels to 
 find out which port and address has been assigned to the tunneling service. Use that infomation to connect to your container via an ssh client.
