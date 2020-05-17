@@ -44,11 +44,10 @@ Step 2. Setup the ssh configuration service file sshd_config
 Step 3. Provide ssh command line access to the container.
 
 3.a Create a pair (public/private) keys [4] in your local machine and upload to the container side
+Use ssh-keygen to generate a pair of keys (public and private). The output of ssh-keygen is two files: id_rsa, id_rsa.pub. 
 
-Use ssh-keygen to create a pair of keys (public and private). ssh-keygen creates two files id_rsa and id_rsa.pub. 
-
-3.a.1 Copy the first one (private key) to ./ssh directory in your local machine.
-3.a.2 Upload the second one (private key) to the container side by typing the following in a notebook:
+3.b Copy the first one (private key) to ./ssh directory in your local machine.
+3.c Upload the second one (private key) to the container side by typing the following in a notebook:
 
 > %cd /root/
 > %mkdir .ssh
