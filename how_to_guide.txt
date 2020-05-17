@@ -7,7 +7,7 @@ The traditional way (or the one suggested by google) to access these resources i
 interfaces [2]. Notebook contents can have the form of: text, code, output, or comments.
 
 Pyhton is the standard suppored language for coding within Google colab, which can also be mixed with unix shell commands.
-The code runs in OS virtualization environments known as: containers. They become very popular as they provide the isolation, 
+The code runs in OS virtualization environments known as: containers [3]. They become very popular as they provide the isolation, 
 and the security of a sandbox environemnt which makes it suitable for executing not-trusted code in compouting environments.
 Working within containers though, in comparison to using real computers, has the major drawback of the state
 of the environment not been preserved (e.g. processes, disk contents) after the container has been terminated.
@@ -43,7 +43,7 @@ Step 2. Setup the ssh configuration service file sshd_config
 
 Step 3. Provide ssh command line access to the container.
 
-3.a Create a pair (public/private) keys in your local machine and upload to the container side
+3.a Create a pair (public/private) keys [4] in your local machine and upload to the container side
 
 Use ssh-keygen to create a pair of keys (public and private). ssh-keygen creates two files id_rsa and id_rsa.pub. 
 
@@ -86,3 +86,5 @@ References:
 [1] Colab service, https://research.google.com/colaboratory/faq.html
 [2] Notebooks, https://en.wikipedia.org/wiki/Notebook_int
 [3] Containers and virtualization: https://en.wikipedia.org/wiki/OS-level_virtualization
+[4] Key-based authentication in ssh: https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
+
