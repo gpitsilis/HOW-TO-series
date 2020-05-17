@@ -17,6 +17,66 @@ To run this tutorial you need to have access to the following:
 2. Account on ngrok service.
 3. Unix shell in your local machine.
 
+Create a new notebook in google-colab and run the following snippents of code:
+
+Step 1. Install ssh service in your google container.
+Type-in a notebook:
+
+> !apt update
+> !apt install openssh-server
+
+Step 2. Setup the ssh configuration service file sshd_config
+
+2.a Activate "no-password" authentication for ssh service
+
+> !echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
+
+2.b For being able to run x11 applications in the shell
+
+> !echo "X11UseLocalhost no" >> /etc/ssh/sshd_config
+
+2.c Start the ssh service
+
+>! cat /etc/ssh/sshd_config
+>! service ssh start
+>! service  --status-all
+
+Step 3. Provide ssh command line access to the container.
+
+3.a Create a pair (public/private) keys in your local machine and upload to the container side
+
+Use ssh-keygen to create a pair of keys (public and private). ssh-keygen creates two files id_rsa and id_rsa.pub. 
+
+3.a.1 Copy the first one (private key) to ./ssh directory in your local machine.
+3.a.2 Upload the second one (private key) to the container side by typing the following in a notebook:
+
+> %cd /root/
+> %mkdir .ssh
+> %cd .ssh
+> %rm authorized_keys
+> !echo "#### contents of id_rsa.pub ####" > authorized_keys
+> !cat authorized_keys
+
+Step 4. Install ngrok and start-up the service.
+
+> !rm ngrok
+> !wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+> !unzip ngrok-stable-linux-amd64.zip
+> !./ngrok authtoken #### your personal token for authentication here ####
+> !rm ngrok-stable-linux-amd64.zip
+> !pwd
+> !./ngrok tcp 22 &
+
+Step 5. 
+
+Once the ngrok service is up and running, check your status page at ngrok at: https://dashboard.ngrok.com/status/tunnels to 
+find out which port and address has been assigned to the tunneling service. Use that infomation to connect to your container via an ssh client.
+
+Example: For connection point expressed by URL: tcp://0.tcp.ngrok.io:12061 you should type-in in the command line:
+> ssh root@0.tcp.ngrok.io -p 12061 -X
+
+The last parameter (-X) is not obligatory, but it is nessesary if you wish to run X windows applications in the conainer.
+
 References:
 [1] Colab service, https://research.google.com/colaboratory/faq.html
 [2] Notebooks, https://en.wikipedia.org/wiki/Notebook_int
