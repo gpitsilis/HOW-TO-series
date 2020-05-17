@@ -77,6 +77,11 @@ Example: For connection point expressed by URL: tcp://0.tcp.ngrok.io:12061 you s
 
 The last parameter (-X) is not obligatory, but it is nessesary if you wish to run X windows applications in the conainer.
 
+If everything has been done properly then you should greathed by a shell prompt like the following:
+# root@9774ykhkfh >
+
+Voila!
+
 References:
 [1] Colab service, https://research.google.com/colaboratory/faq.html
 [2] Notebooks, https://en.wikipedia.org/wiki/Notebook_int
