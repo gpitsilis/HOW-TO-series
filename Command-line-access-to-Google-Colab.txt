@@ -81,6 +81,8 @@ root@9774ykhkfh #
 
 Voila!
 
+The downside of this technique is that it requires your browser to point and stay in the notebook webpage of the colab project (see step 1 above), while you will be accessing the command line in the google machine.
+
 References:
 [1] Colab service, https://research.google.com/colaboratory/faq.html
 [2] Notebooks, https://en.wikipedia.org/wiki/Notebook_int
