@@ -76,7 +76,7 @@ Example: For connection point expressed by URL: tcp://0.tcp.ngrok.io:12061 you s
 
 The last parameter (-X) while not obligatory, it is nessesary if you wish to run X windows applications in the container.
 
-If everything has been done properly then you should greathed by a shell prompt like the following:
+If everything has gone well then you should be greathed by a shell prompt like the following:
 root@9774ykhkfh #
 
 Voila!
