@@ -42,3 +42,6 @@ If you get a list of files, it means that rclone has been setup properly
 voila !
 
 
+References:
+
+[1] https://snapcraft.io/install/rclone/ubuntu
