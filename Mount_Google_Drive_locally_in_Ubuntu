@@ -40,7 +40,9 @@ If you get a list of files, it means that rclone has been setup properly
 > mkdir ~./googledrive
 
 > rclone mount gdrive: ~./googledrive
+Leave this running to keep the mount active.
 
+In another shell type the following to check if it works.
 > ls googledrive
 
 voila !
