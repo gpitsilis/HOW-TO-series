@@ -20,7 +20,11 @@ type:
 
 > rclone config
 
-Follow the prompts and setup for google drive (it is the option 7, I think)
+Follow the prompts to 
+declare as 'new remote'
+and setup for google drive (it is the option 7, I think).
+
+In the browser window that pops up choose which username to use for authorising rclone.
 
 
 3. Test rclone connectivity with google-drive
