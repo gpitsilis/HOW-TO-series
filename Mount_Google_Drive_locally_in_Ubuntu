@@ -3,8 +3,24 @@ This is how to mount your google-drive in ubuntu and make it look like a local d
 
 1. Install rclone
 
+Find and download rclone.
+
+check instructions at:
+https://snapcraft.io/install/rclone/ubuntu
+
+Proceed, either via:
+
+a) > sudo snap install rclone
+
+b) > sudo apt install rclone
+
 2. Setup rclone
 
+type:
+
+> rclone config
+
+Follow the prompts and setup for google drive (it is the option 7, I think)
 
 
 3. Test rclone connectivity with google-drive
