@@ -1,1 +1,10 @@
 
+This is how to mount your google-drive in ubuntu and make it look like a local drive/directory
+
+1. Install rclone
+
+2. Setup rclone
+
+4. Test rclone connectivity with google-drive
+
+3. Mount drive
