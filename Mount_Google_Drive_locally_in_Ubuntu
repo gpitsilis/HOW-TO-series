@@ -5,6 +5,22 @@ This is how to mount your google-drive in ubuntu and make it look like a local d
 
 2. Setup rclone
 
+
+
 3. Test rclone connectivity with google-drive
 
-4. Mount drive
+Check if remote listing of files can be produced, by:
+
+> rclone gdrive:
+
+If you get a list of files, it means that rclone has been setup properly
+
+4. Mount the goodle drive under a local directory.
+
+> mkdir ~./googledrive
+
+> rclone mount gdrive: ~./googledrive
+
+> ls googledrive
+
+
