@@ -4,4 +4,7 @@ This is a series of how-to guides for anyone interested in utilizing Googles Gol
 Neural Networks Classifiers.
 
 The series includes:
-1. How to word in command line mode in google collab as you would do with your local linux-based PC.
+1. How to work in command line mode in google collab as you would do with your local linux-based PC.
+2.
+3.
+4.
