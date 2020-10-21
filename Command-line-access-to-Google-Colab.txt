@@ -1,12 +1,12 @@
 
-Co-lab [1] is a new service by Google which provides access to Google's GPU computing power to anyone who has a google 
-user account. Such service is quite useful for tasks like Neural Network training, where nvidia GPUs has become the 
+Co-lab [1] is a new service by Google which makes the Google's GPU computing power available to anyone who has a google 
+user account. Such service is quite useful for tasks like Neural Network training, where nvidia GPUs have become the 
 industry standard.
 
 The traditional way (or the one suggested by google) to access these resources is via the use of python notebook 
 interfaces [2]. Notebook contents can have the form of: text, code, output, or comments.
 
-Pyhton is the standard suppored language for coding within Google colab, which can also be mixed with unix shell commands.
+Pyhton is the standard suppored language for coding within Google colab, but the can also be mixed with unix shell commands.
 The code runs in OS virtualization environments known as: containers [3]. They become very popular as they provide the isolation, 
 and the security of a sandbox environemnt which makes it suitable for executing not-trusted code in compouting environments.
 Working within containers though, in comparison to using real computers, has the major drawback of the state
@@ -19,15 +19,15 @@ To run this tutorial you need to have access to the following:
 
 Create a new notebook in google-colab and run the following snippents of code:
 
-Step 1. Install ssh service in your google container.
+Step 1. Installing the ssh service in your google container.
 Type-in a notebook:
 
 > !apt update
 > !apt install openssh-server
 
-Step 2. Setup the ssh configuration service file sshd_config
+Step 2. Setting up the ssh configuration service file sshd_config
 
-2.a Activate "no-password" authentication for ssh service
+2.a Activate the "no-password" authentication for ssh service
 
 > !echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
 
@@ -35,19 +35,21 @@ Step 2. Setup the ssh configuration service file sshd_config
 
 > !echo "X11UseLocalhost no" >> /etc/ssh/sshd_config
 
-2.c Start the ssh service
+2.c Starting the ssh service
 
 >! cat /etc/ssh/sshd_config
 >! service ssh start
 >! service  --status-all
 
-Step 3. Provide ssh command line access to the container.
+Step 3. Providing ssh command line access to the container.
+
+To achieve that you will need to:
 
 3.a Create a pair (public/private) keys [4] in your local machine and upload to the container side
 Use ssh-keygen to generate a pair of keys (public and private). The output of ssh-keygen is two files: id_rsa, id_rsa.pub. 
 
 3.b Copy the first one (private key) to ./ssh directory in your local machine.
-3.c Upload the second one (private key) to the container side by typing the following in a notebook:
+3.c Upload the second one (public key) to the container side by typing the following in a notebook:
 
 > %cd /root/
 > %mkdir .ssh
@@ -57,6 +59,8 @@ Use ssh-keygen to generate a pair of keys (public and private). The output of ss
 > !cat authorized_keys
 
 Step 4. Install ngrok and start-up the service.
+
+ngrok is a proxification service useful for making isolated nodes ( those which are given NAT IP addresses ) accessible from the public internet.
 
 > !rm ngrok
 > !wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
