@@ -16,11 +16,11 @@ General assumptions:
 
 The ingredients:
 
-1. ngrok service. A tunneling service used for exposing your local service to the public, making them endpoing urls.
+1. ngrok service. A tunneling service used for exposing your local service to the public, forwarded as endpoint urls.
 2. dynu service. A DNS service which provides subdomain names of your choice free of charge.
 3. Apache http server, running in your local device. This is the main service you are interested in making public.
 
 
 Steps.
 
-1. Download and install ngrok in your local device.
+1. Download and install ngrok in your local device from https://ngrok.com/
