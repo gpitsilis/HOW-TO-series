@@ -9,8 +9,9 @@ publically accessible from anywhere. Such devices or hosts are usually hidden be
 General assumptions:
 
 1. Your local machine is NATed ( networked behind a gateway/firewall, and it has private IP address of type 192.168.x.x )
-2. You are not willing to pay the costs for a domain name registration.
+2. You are not happy to pay the costs for a domain name registration.
 3. You are not willing to spend money for renting a Server Hardware or a Virtual Private Server.
+4. There is available hardware in your local network, capable of supporting your services to expose.
 
 
 The ingredients:
