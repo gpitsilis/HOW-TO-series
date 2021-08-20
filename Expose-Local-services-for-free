@@ -1,2 +1,17 @@
-How to make your services (web site, IoT device etc.) that are hosted on you local network, accessible, with a fixed domain name, at no cost.
-This tutorial is also useful for anyone who wants to make his local machine or IoT device, that is hidden behind a NAT or it has a private IP address, accessible from anywhere.
+How to expose your services (web sites, IoT devices etc) which are hosted on you local network,
+so that they become accessible via the internet under a fixed domain name, 
+at no cost !
+
+This tutorial is also useful for anyone who wants to make his local machine or IoT device, that is hidden behind a NAT or it has a private IP address, 
+accessible from anywhere.
+
+This :
+
+1. Your local machine is NATed ( behind a gateway/firewall, and it has private IP address e.g. 192.168.x.x )
+2. You 
+
+The ingredients:
+
+1. ngrok service.
+2. dynu service.
+3. 
