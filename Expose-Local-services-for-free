@@ -2,13 +2,16 @@ How to expose your services (web sites, IoT devices etc) which are hosted on you
 so that they become accessible via the internet under a fixed domain name, 
 at no cost !
 
-This tutorial is also useful for anyone who wants to make his local machine or IoT device, that is hidden behind a NAT or it has a private IP address, 
-accessible from anywhere.
+This tutorial is suited for anyone who is experimenting and testing with own services, before their exposure for commercial use.
+It is also useful for anyone who wishes to make his local machine or IoT device in general 
+publically accessible from anywhere. Such devices or hosts are usually hidden behind a NAT and have private IP addresses.
 
-This :
+General assumptions:
 
-1. Your local machine is NATed ( behind a gateway/firewall, and it has private IP address e.g. 192.168.x.x )
-2. You 
+1. Your local machine is NATed ( networked behind a gateway/firewall, and it has private IP address of type 192.168.x.x )
+2. You are not willing to pay the costs for a domain name registration.
+3. You are not willing to spend money for renting a Server Hardware or a Virtual Private Server.
+
 
 The ingredients:
 
