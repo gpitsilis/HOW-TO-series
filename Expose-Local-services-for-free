@@ -11,11 +11,16 @@ General assumptions:
 1. Your local machine is NATed ( networked behind a gateway/firewall, and it has private IP address of type 192.168.x.x )
 2. You are not happy to pay the costs for a domain name registration.
 3. You are not willing to spend money for renting a Server Hardware or a Virtual Private Server.
-4. There is available hardware in your local network, capable of supporting your services to expose.
+4. There is available hardware in your local network, capable of running your services that is to expose.
 
 
 The ingredients:
 
-1. ngrok service.
-2. dynu service.
-3. 
+1. ngrok service. A tunneling service used for exposing your local service to the public, making them endpoing urls.
+2. dynu service. A DNS service which provides subdomain names of your choice free of charge.
+3. Apache http server, running in your local device. This is the main service you are interested in making public.
+
+
+Steps.
+
+1. Download and install ngrok in your local device.
