@@ -20,7 +20,8 @@ The ingredients:
    A major limitation of the free of charge service by ngrok is the duration of time that is given to a tunnel to stay alive.
    Currently this has been set to 2 hours, after which, tunnel re-initiation is required, which the service is tunneled with a new endpoing.
    This limitation can be removed by registering to the service for free plan, and initialization of the status before starting the tunnel.
-   This is done by issuing the command:  ./ngrok authtoken <TOKEN STRING HERE>, before issuing ./ngrok http <PORT> to start a new tunnel
+   This is done by issuing the command:  ./ngrok authtoken <TOKEN STRING HERE>, before issuing ./ngrok http <PORT> to start a new tunnel.
+   Using the token has though another limitation of allowing only one tunnel to exist at any given time, for the free service.
    
    Also ngrok does not provide an API for the users to control their tunneled services progamatically.
 2. dynu service. A DNS service which provides subdomain names of your choice free of charge.
