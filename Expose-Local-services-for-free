@@ -17,6 +17,9 @@ General assumptions:
 The ingredients:
 
 1. ngrok service. A tunneling service used for exposing your local service to the public, forwarded as endpoint urls.
+   A major limitation of the free of charge service by ngrok is the duration of time that is given for a tunnel to stay alive. 
+   Currently this has been set to 2 hours, after which, tunnel re-initiation is required.
+   Also ngrok does not provide an API for the user to control progamatically the tunneled services.
 2. dynu service. A DNS service which provides subdomain names of your choice free of charge.
 3. Apache http server, running in your local device. This is the main service you are interested in making public.
 
