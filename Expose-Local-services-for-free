@@ -22,7 +22,7 @@ The ingredients:
    This limitation can be altered by registering to the service for free plan, and initialization of the status before starting the tunnel.
    This is done by issuing the command:  ./ngrok authtoken <TOKEN STRING HERE>, before issuing ./ngrok http <PORT> to start a new tunnel.
    Using the token has though another limitation of allowing only one tunnel to exist at any given time, for the free service.
-   The 2 hours limitation can work out ok for many cases, but the algorithm can be also modified towards robustness. 
+   The 2 hours limitation can work out ok for many cases, but the algorithm can be also modified towards high robustness. 
    
    Also ngrok does not provide an API for the users to control their tunneled services progamatically.
 2. dynu service. A DNS service which provides subdomain names of your choice free of charge.
