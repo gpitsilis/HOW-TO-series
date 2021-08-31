@@ -25,8 +25,8 @@ The ingredients:
    The 2 hours limitation can work out ok for many cases, but the algorithm can be also modified towards high robustness. 
    
    Also ngrok does not provide an API for the users to control their tunneled services progamatically.
-2. dynu service. A DNS service which provides subdomain names of your choice free of charge.
-3. Apache http server, running in your local device. This is the main service you are interested in making public.
+2. dynu service. A Domain Name System service which provides subdomain names of your choice free of charge.
+3. Apache http server, running in your local device. We assume that you are interested in making public an http service.
 
 
 Steps.
