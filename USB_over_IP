@@ -14,7 +14,9 @@ Steps:
 
 This is for checking that the usb device is accessible by the operating system.
 # sudo modprobe vhci-hcd
-lsmod | grep vhci_hcd
+
+This is for ...
+# lsmod | grep vhci_hcd
 
 This is for listing the identifiers given to usb devices by usbip 
 #sudo usbip list -l
