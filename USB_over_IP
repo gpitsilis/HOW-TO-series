@@ -34,4 +34,4 @@ This is for attaching a listed remote device to the local list of usb devices (1
 Check if the remote usb device is shown in the list of the local ones.
 # lsusb
 
-5. You are now ready to use the remote usb device as a local one.
+5. You are now ready to use the remote usb device as if it wsas a local one.
