@@ -12,28 +12,31 @@ Steps:
 
 3. On the server machine, open a unix shell window and type the following commands:
 
-This is for checking that the usb device is accessible by the operating system.
-# sudo modprobe vhci-hcd
+  This is for checking that the usb device is accessible by the operating system.
+  # sudo modprobe vhci-hcd
 
-This is for ...
-# lsmod | grep vhci_hcd
+  This is for ...
+  # lsmod | grep vhci_hcd
 
-This is for listing the identifiers given to usb devices by usbip 
-#sudo usbip list -l
+  This is for listing the identifiers given to usb devices by usbip 
+  #sudo usbip list -l
 
-# This is for binding a device using an identifier already listed with the previous command (1-1 is used as example here)
-sudo usbip bind --busid 1-1
+  # This is for binding a device using an identifier already listed with the previous command (1-1 is used as example here)
+  sudo usbip bind --busid 1-1
 
 4. On the client side, open a unix shell window and type the following commands:
 
-This is for listing the identifiers of the usb devices bound in the server machine (192.168.1.216 is used as an example server IP here) 
-we wish to access a usb device.
-# sudo usbip list -r 192.168.1.216
+  This is for listing the identifiers of the usb devices bound in the server machine (192.168.1.216 is used as an example server IP here) 
+  we wish to access a usb device.
+  # sudo usbip list -r 192.168.1.216
 
-This is for attaching a listed remote device to the local list of usb devices (1-1 is used as an example here, as well as the remote IP: 192.168.1.216) 
-# sudo usbip attach -r 192.168.1.216 -d 1-1
+  This is for attaching a listed remote device to the local list of usb devices (1-1 is used as an example here, as well as the remote IP: 192.168.1.216) 
+  # sudo usbip attach -r 192.168.1.216 -d 1-1
 
-Check if the remote usb device is shown in the list of the local ones.
-# lsusb
+  Check if the remote usb device is shown in the list of the local ones.
+  # lsusb
 
 5. You are now ready to use the remote usb device as if it wsas a local one.
+
+
+
