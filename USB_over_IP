@@ -36,7 +36,7 @@ Steps:
   Check if the remote usb device is shown in the list of the local ones.
   # lsusb
 
-5. You are now ready to use the remote usb device as if it wsas a local one.
+5. You are now ready to use the remote usb device as if it was directy attached to your computer.
 
 
 
