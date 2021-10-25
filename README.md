@@ -11,3 +11,4 @@ The series includes:
 5. How to publish your services (web site etc) hosted on you local network, with a domain name, for free. (in progress)
 6. How to access via the internet a USB device attached to a remote machine. (comming up)
 7. How to install and run python applications in raspberry pi zero that require tensorflow. (comming up)
+8. How to write REST services in python for raspberry pi zero. (comming up)
