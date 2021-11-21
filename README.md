@@ -5,7 +5,7 @@ Neural Networks Classifiers.
 
 The series includes:
 1. How to work in command line mode in google collab as you would do with your local linux-based PC.
-2. How to downgrade python to version 2.x in your google colab so that yoou can run your old code.
+2. How to downgrade python to version 2.x in your google colab so that it can be made possible to run your old code.
 3. How to mount your google drive as a remote drive in your local linux.
 4. How to show the cpu temperature of your raspberry pi.
 5. How to publish your services (web site etc) hosted on you local network, using a domain name, for free. (in progress)
