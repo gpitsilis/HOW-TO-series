@@ -1,0 +1,23 @@
+Step 1.
+
+Paste this python code to a python file with name /opt/utilities/blankled.py
+
+import os
+import time
+
+os.system('echo gpio | sudo tee /sys/class/leds/led0/trigger')
+while True:
+  os.system('echo 1 | sudo tee /sys/class/leds/led0/brightness') # led on
+  time.sleep(0.5)
+  os.system('echo 0 | sudo tee /sys/class/leds/led0/brightness') # led off
+  time.sleep(10)
+  
+2. Make the script to run during system startup
+
+Place the following commands towards the end of /etc/rc.local file, before the "exit 0" command:
+
+# make the led blinking
+python /opt/utilities/blinkled.py > /dev/null 2>&1 &
+
+exit 0
+
