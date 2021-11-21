@@ -12,4 +12,4 @@ The series includes:
 6. How to access via the internet a USB device attached to a remote machine. (comming up)
 7. How to install and run python applications in raspberry pi zero that require tensorflow. (comming up)
 8. How to write REST services in python for raspberry pi zero. (comming up)
-9. How to make the led in raspberry pi blinking, to save it lifetime.
+9. How to make the led in raspberry pi blinking, to save its lifetime.
