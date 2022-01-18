@@ -30,6 +30,12 @@ Copy and paste the part after the "Modeline" mark, and use it to create a comman
 3. Add the new mode to your adapter's available modes by:
 > xrandr --addmode VGA-0 "1600x1200"
 
+
+4. This step is not nessesary, but it is to show you that you can change resolutions via the command line:
+> xrandr --output VGA-0 --mode 1280x1024
+
+
+
 For example, to add 3 new resolutions, create a new text shell script file and include the following commands to it:
 
 #!/bin/sh
