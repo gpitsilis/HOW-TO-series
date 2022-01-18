@@ -51,6 +51,6 @@ cvt 1400 1050 70
 xrandr --newmode "1400x1050"  144.00  1400 1496 1640 1880  1050 1053 1057 1096 -hsync +vsync
 xrandr --addmode VGA-0 "1400x1050"
 
-Save the file, execute the script and enjoy your new added screen resolutions.
+Save the shell script file, change the permissions to executable, run the script and enjoy your new screen resolutions.
 
 
