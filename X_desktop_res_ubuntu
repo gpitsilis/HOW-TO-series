@@ -1,1 +1,48 @@
+This tutorial is suitable for cases where in ubuntu desktop you get a low resolution by default (e.g. 640x480) , with no options to increase to a higher one.
+Such low resolution does not conform to the modern standards for computing, making your system practically unusable.
+This usually happens when you connect an old type VGA monitor (e.g. an old-school CRT ) to your computer in which we try to tun one of the late distros of ubuntu.
+
+Some useful commands to type in the command prompt:
+> xrandr -q
+
+To get the existing resolutions and adapters available in your computer.
+(You will need to install xrandr if not already installed)
+
+For increasing the resolution you will need to apply the following 3 steps: 
+(first make sure that you monitor does support the resolution your are trying)
+
+1.
+To add an undetected resolution, first use the cvt command to test the settings you need. The format is: horiz_res, vert_res, sync_Hz
+> cvt 1600 1200 60
+
+The response should be look like this:
+# 1600x1200 59.87 Hz (CVT 1.92M3) hsync: 74.54 kHz; pclk: 161.00 MHz
+Modeline "1600x1200_60.00"  161.00  1600 1712 1880 2160  1200 1203 1207 1245 -hsync +vsync
+
+2. Declare the new mode.
+
+3. Add the new mode to your 
+
+
+
+To add 3 new resolutions, create a new text shell script file and include the following commands.
+
+#!/bin/sh
+
+cvt 1600 1200 60
+xrandr --newmode "1600x1200"  161.00  1600 1712 1880 2160  1200 1203 1207 1245 -hsync +vsync
+xrandr --addmode VGA-0 "1600x1200"
+
+cvt 1280 1024 70
+xrandr --newmode "1280x1024"  109.00  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync
+xrandr --addmode VGA-0 "1280x1024"
+
+cvt 1400 1050 70
+xrandr --newmode "1400x1050"  144.00  1400 1496 1640 1880  1050 1053 1057 1096 -hsync +vsync
+xrandr --addmode VGA-0 "1400x1050"
+
+
+Based on instructions found at:
+
+https://goinglinux.com/articles/Connect_to_HDTV_1080P_using_VGA_en.htm
 
