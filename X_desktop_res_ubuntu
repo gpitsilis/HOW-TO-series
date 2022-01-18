@@ -1,4 +1,8 @@
-This tutorial is suitable for cases where in ubuntu desktop you get a low resolution by default (e.g. 640x480) , with no options to increase to a higher one.
+This tutorial is based on instructions found online at:
+
+https://goinglinux.com/articles/Connect_to_HDTV_1080P_using_VGA_en.htm
+
+It is suitable for cases where in your ubuntu desktop for some reasin you get a low resolution by default (e.g. 640x480) , with no options to increase to a higher one.
 Such low resolution does not conform to the modern standards for computing, making your system practically unusable.
 This usually happens when you connect an old type VGA monitor (e.g. an old-school CRT ) to your computer in which we try to tun one of the late distros of ubuntu.
 
@@ -20,15 +24,15 @@ The response should be look like this:
 Modeline "1600x1200_60.00"  161.00  1600 1712 1880 2160  1200 1203 1207 1245 -hsync +vsync
 
 2. Declare the new mode.
+Copy and paste the part after the "Modeline" mark, and use it to create a command line similar to the following, in accordance with the previous example:
+> xrandr --newmode "1600x1200"  161.00  1600 1712 1880 2160  1200 1203 1207 1245 -hsync +vsync
 
-3. Add the new mode to your 
+3. Add the new mode to your adapter's available modes by:
+> xrandr --addmode VGA-0 "1600x1200"
 
-
-
-To add 3 new resolutions, create a new text shell script file and include the following commands.
+For example, to add 3 new resolutions, create a new text shell script file and include the following commands to it:
 
 #!/bin/sh
-
 cvt 1600 1200 60
 xrandr --newmode "1600x1200"  161.00  1600 1712 1880 2160  1200 1203 1207 1245 -hsync +vsync
 xrandr --addmode VGA-0 "1600x1200"
@@ -41,8 +45,6 @@ cvt 1400 1050 70
 xrandr --newmode "1400x1050"  144.00  1400 1496 1640 1880  1050 1053 1057 1096 -hsync +vsync
 xrandr --addmode VGA-0 "1400x1050"
 
+Save the file, execute the script and enjoy your new added screen resolutions.
 
-Based on instructions found at:
-
-https://goinglinux.com/articles/Connect_to_HDTV_1080P_using_VGA_en.htm
 
