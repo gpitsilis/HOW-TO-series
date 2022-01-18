@@ -13,4 +13,4 @@ The series includes:
 7. How to install and run python applications in raspberry pi zero that require tensorflow. (comming up)
 8. How to write REST services in python for raspberry pi zero. (comming up)
 9. How to make the led in raspberry pi blinking, to save its lifetime.
-10. How to change the X desktop resolution in ubuntu for non-supported GPUs. (comming up)
+10. How to increase the X desktop resolution in ubuntu for non-supported GPUs. (comming up)
