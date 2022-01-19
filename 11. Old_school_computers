@@ -33,8 +33,8 @@ c) copy the files to the mounted image
 d) unmount the image file:
 > sudo umount /mnt
 
-d) format the floppy disk with:
+e) format the floppy disk with:
 > sudo ufiformat -f 720 -v /dev/sdd
 
-d) write the image file to the floppy disk.
+f) write the image file to the floppy disk.
 > sudo dd bs=512 of=/dev/sdd if=imagefile.img
