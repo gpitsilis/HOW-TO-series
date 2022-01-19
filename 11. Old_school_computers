@@ -17,3 +17,22 @@ Don't forget to unmount with:
 How to write an existing image file to your usb connected floppy in ubuntu:
 
 > sudo dd if=diskimage.img of=/dev/sdd
+
+
+2. Write to a disk via an image file.
+
+a) create a blank image file with capacity 720k:
+
+> mkfs.msdos -C imagefile.img 720
+
+b) mount the image file to the filesystem.
+
+> sudo mount -o loop imagefile.img /mnt
+
+c) copy the files to the mounted image
+
+> sudo cp * /mnt
+
+d) write the image file to the floppy disk.
+
+> sudo dd bs=512 if=/dev/fda of=/path/imagefile.img
