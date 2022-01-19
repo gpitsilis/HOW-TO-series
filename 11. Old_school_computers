@@ -1,0 +1,19 @@
+1. Dealing with floppy disks!!! 
+
+How to format a floppy disk in a non-standard capacity in ubuntu.
+
+To format a 3.5 inch floppy disk in msdos 720k format in a usb floppy drive connected to your ubuntu system type:
+> sudo ufiformat -f 720 -v /dev/sdd
+> sudo mkdosfs -I /dev/sdd
+
+Then you can mount the floppy, and test if it works by:
+
+> sudo mount /dev/sdd /mnt
+> ls /mnt
+
+Don't forget to unmount with:
+> sudo umount /mnt
+
+How to write an existing image file to your usb connected floppy in ubuntu:
+
+> sudo dd if=diskimage.img of=/dev/sdd
