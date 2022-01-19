@@ -30,6 +30,9 @@ b) mount the image file to the filesystem.
 c) copy the files to the mounted image
 > sudo cp * /mnt
 
+d) unmount the image file:
+> sudo umount /mnt
+
 d) format the floppy disk with:
 > sudo ufiformat -f 720 -v /dev/sdd
 
