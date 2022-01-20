@@ -38,3 +38,4 @@ e) format the floppy disk with:
 
 f) write the image file to the floppy disk.
 > sudo dd bs=512 of=/dev/sdd if=imagefile.img
+
