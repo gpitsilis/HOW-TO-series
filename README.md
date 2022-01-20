@@ -16,3 +16,4 @@ The series includes:
 10. How to increase the X desktop resolution in ubuntu for non-supported GPUs.
 11. Floppy drives in old-school computers in the 21st century.
 12. MS-DOS networking in the 21st-century. (comming up)
+13. A catalog of useful disk images.
