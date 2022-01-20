@@ -14,4 +14,5 @@ The series includes:
 8. How to write REST services in python for raspberry pi zero. (comming up)
 9. How to make the led in raspberry pi blinking, to save its lifetime.
 10. How to increase the X desktop resolution in ubuntu for non-supported GPUs.
-11. How to deal with old-school computers today.
+11. Floppy drives in old-school computers in the 21st century.
+12. MS-DOS networking in the 21st-century. (comming up)
