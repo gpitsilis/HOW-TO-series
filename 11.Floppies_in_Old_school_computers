@@ -1,5 +1,7 @@
 1. Dealing with floppy disks!!! 
 
+Note: In the following examples is assumed that the usb floopy drive has been detected as: /dev/sdd
+
 How to format a floppy disk in a non-standard capacity in ubuntu.
 
 To format a 3.5 inch floppy disk in msdos 720k format in a usb floppy drive connected to your ubuntu system type:
