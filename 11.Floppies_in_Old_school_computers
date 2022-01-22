@@ -39,6 +39,9 @@ e) format the floppy disk with:
 > sudo ufiformat -f 720 -v /dev/sdd
 Note: if the floppy diskette refuses to format, use a piece of tape to cover the HD hole that is in the plastic cover of the diskette.
 
-f) write the image file to the floppy disk.
+f) create a dos filesystem in the floppy
+> sudo mkdosfs -I /dev/sdd
+
+d) write the image file to the floppy disk.
 > sudo dd bs=512 of=/dev/sdd if=imagefile.img
 
