@@ -1,6 +1,6 @@
 1. Dealing with floppy disks!!! 
 
-Note: In the following examples is assumed that the usb floopy drive has been detected as: /dev/sdd
+Note: In the following examples is assumed that your usb floopy drive has been detected as: /dev/sdd
 
 How to format a floppy disk in a non-standard capacity in ubuntu.
 
@@ -13,7 +13,7 @@ Then you can mount the floppy, and test if it works by:
 > sudo mount /dev/sdd /mnt
 > ls /mnt
 
-Don't forget to unmount with:
+Don't forget to unmount when finished with:
 > sudo umount /mnt
 
 How to write an existing image file to your usb connected floppy in ubuntu:
