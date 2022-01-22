@@ -1,4 +1,4 @@
-1. Dealing with floppy disks!!! 
+1. Working with floppy disks!!! 
 
 Note: In the following examples is assumed that your usb floopy drive has been detected as: /dev/sdd
 
