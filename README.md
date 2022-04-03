@@ -18,3 +18,4 @@ The series includes:
 12. MS-DOS networking in the 21st-century. (comming up)
 13. A repository / catalog of useful disk images.
 14. NFS file sharing and remote disk access (comming up)
+15. Sucessful H/W repairs
