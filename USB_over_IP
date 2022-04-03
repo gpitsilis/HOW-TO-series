@@ -22,6 +22,7 @@ After you install the server and the client components in the machines to share 
 # usbsrv -info
 # usbsrv -auto-share on
 # usbsrv -list-devices
+# usbsrv -share 1
 
 2. On the local side:
 
