@@ -3,14 +3,18 @@ Make:
 Samsung 
   400 GB
 Symptoms:
-- Click of death
-- Afterwards it stopped spinning, because of surcharge in the power supply which blew up the fuse and the diode in the PCB.
+- Click of death, wouldn't be identified in the PC.
+- Afterwards it stopped spinning completely, because of surcharge in the power supply (by mistake) which blew up the fuse and the diode in the PCB.
 
 Checking:
 - checked with polymeter:
 1. The sata power connector for short circuit in the 5 and 2 volt lines
 2. The TVs diodes or 5V and 12V lines.
-and found that:
+Diode and fuse identified in the PCB and are shown in the picture marked in red oval and blue oval respectivelly in the attached photos.
+
+Diagnosis result:
+1. 
+2.
 
 Repair:
 - Removed the TVS diode used for protecting the 5 volts line (it has a marking QE in the PCB, see picture), after it was checked for conductivity and found failed as it provided conductivity 
