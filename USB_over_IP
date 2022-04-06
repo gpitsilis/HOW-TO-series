@@ -27,13 +27,6 @@ check if usb device you wish to share is connected to the server machine
 # usbsrv -share 1
 
 2. On the local side:
-OXI
-# usbclnt -connect -server <server IP>:<server port>
-example:
-OXI
-# usbclnt -connect -server 192.168.1.216:32032
-
-3. On the local side:
 # usbclnt -add-server <server IP>:<ervice port>
 exampe:
 # usbclnt -add-server 192.168.1.216:32032
@@ -50,6 +43,6 @@ check if the device appears in the list of local usb devices
 to disconnect from a remote USB device:
 # usbclnt -disconnect 1-1
 
-4. On the remote side
+3. On the remote side
 to make an existing usb device unshared:
 # usbsrv -unshare 1
