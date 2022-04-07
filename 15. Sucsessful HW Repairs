@@ -13,8 +13,8 @@ Checking:
 Diode and fuse identified in the PCB and are shown in the picture marked in red oval and blue oval respectivelly in the attached photos.
 
 Diagnosis result:
-1. TVS diode (it has a marking QE in its body) found broken.
-2. Fuse for 5 vold line (it has a marking 0 in its body) found broken.
+1. TVS diode (it has a marking QE in its body) found to be broken.
+2. Fuse for 5 vold line (it has a marking 0 in its body) found to be broken.
 
 Repair:
 - Removed the TVS diode used for protecting the 5 volts line (it has a marking QE in its body, see picture), after the conductivity test
@@ -24,4 +24,3 @@ and found to to provide conductivity in both ways.
 useful resources:
 http://www.users.on.net/~fzabkar/HDD/TVS_diode_FAQ.html
 https://www.youtube.com/watch?v=qdXW-DUSsh8
- 
