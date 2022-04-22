@@ -19,7 +19,7 @@ After you install the server and the client components in the machines to share 
 
 1. On the remote side:
 check if usb device you wish to share is connected to the server machine
-# usbls
+# lsusb
 
 # usbsrv -info
 # usbsrv -auto-share on
