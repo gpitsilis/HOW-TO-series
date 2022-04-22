@@ -27,7 +27,7 @@ check if usb device you wish to share is connected to the server machine
 # usbsrv -share 1
 
 2. On the local side:
-# usbclnt -add-server <server IP>:<ervice port>
+# usbclnt -add-server <server IP>:<service port>
 exampe:
 # usbclnt -add-server 192.168.1.216:32032
 
